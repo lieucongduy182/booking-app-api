@@ -1,0 +1,55 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "ecmaFeatures": {
+        "modules": true,
+        "spread": true,
+        "restParams": true
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "spaced-comment": "off",
+        "no-console": "warn",
+        "consistent-return": "off",
+        "func-names": "off",
+        "object-shorthand": "off",
+        "no-process-exit": "off",
+        "no-param-reassign": "off",
+        "no-return-await": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
+        "prefer-destructuring": [
+            "error",
+            {
+                "object": true,
+                "array": false
+            }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "req|res|next|val"
+            }
+        ],
+        "import/extensions": "off",
+        "import/prefer-default-export": "off",
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off",
+        "import/no-extraneous-dependencies": "off",
+        "node/no-unpublished-import": "off",
+        "prefer-arrow-callback": "off"
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}
